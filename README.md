@@ -1,145 +1,197 @@
-# 🤖 Codec Technologies – Artificial Intelligence & Machine Learning Internship
+# 🚀 Codec | AI & Machine Learning Projects
 
-A collection of hands-on Artificial Intelligence and Machine Learning projects developed as part of my **AI/ML Internship at Codec Technologies**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Domain-Artificial%20Intelligence-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Machine-Learning-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Python-yellow?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+</p>
 
-This repository showcases practical implementations of machine learning algorithms, data preprocessing, model training, prediction systems, and interactive applications using Python.
+Welcome to **Codec**, my personal AI and Machine Learning project repository developed as part of my learning journey and internship experience with **Codec Technologies**.
 
-## 🚀 Internship Projects
+This repository brings together practical projects that explore machine learning, intelligent recommendations, weather forecasting, data analysis, and interactive application development.
 
-| No. | Project | Description | Status |
-|---|---|---|---|
-| 01 | Credit Scoring Model | Predicts creditworthiness using customer financial information and machine learning. | ✅ Completed |
-| 02 | Speech Emotion Recognition | Identifies human emotions from speech audio using audio feature extraction and deep learning. | 🚧 In Progress |
-| 03 | WeatherIQ – Weather Analysis & Rain Prediction | Analyzes weather data and predicts the possibility of rain using ML. | 🚧 In Progress |
-| 04 | Project 4 | To be updated with the assigned project details. | ⏳ Pending |
+My objective is to transform theoretical knowledge into practical solutions while continuously improving my technical and problem-solving skills.
 
-## 🛠️ Technologies Used
+---
 
-- **Programming Language:** Python
-- **Machine Learning:** Scikit-learn
-- **Deep Learning:** TensorFlow / PyTorch
-- **Data Processing:** Pandas, NumPy
-- **Data Visualization:** Matplotlib, Seaborn, Plotly
-- **Web Framework:** Streamlit
-- **Development Tools:** VS Code, Jupyter Notebook, Git, GitHub
+## 📌 Projects
 
-## 📂 Repository Structure
+### 🌦️ 1. WeatherPrediction – AI Weather Analysis & Rain Prediction
+
+An interactive machine learning application that analyzes historical weather data and predicts the possibility of rainfall.
+
+**Key Features**
+- AI-powered rainfall prediction.
+- Interactive weather input interface.
+- Weather analytics and data visualization.
+- Monthly rainfall probability analysis.
+- Temperature trend analysis.
+- Machine learning model integration.
+
+**Technology Stack**
+
+`Python` `Pandas` `NumPy` `Scikit-learn` `Plotly` `Streamlit`
+
+📂 **Project Repository:** [WeatherPrediction](./WeatherPrediction)
+
+---
+
+### 🎬 2. CineMatch – Movie Recommendation System
+
+A movie recommendation project designed to make movie discovery more personalized and engaging.
+
+**Project Focus**
+- Movie discovery and recommendations.
+- Personalized movie exploration.
+- Interactive user experience.
+- Recommendation-based application development.
+
+**Technology Stack**
+
+Refer to the [CineMatch project directory](./CineMatch) for its complete implementation and dependencies.
+
+📂 **Project Repository:** [CineMatch](./CineMatch)
+
+---
+
+## 🛠️ Technologies & Tools
+
+| Category | Technologies |
+|---|---|
+| Programming Languages | Python, JavaScript |
+| Machine Learning | Scikit-learn |
+| Data Processing | Pandas, NumPy |
+| Data Visualization | Plotly, Matplotlib |
+| Application Development | Streamlit |
+| Frontend Development | HTML, CSS, React |
+| Development Environment | VS Code, Jupyter Notebook |
+| Version Control | Git, GitHub |
+
+*Technologies listed represent tools explored across my development journey; individual projects may use different stacks.*
+
+---
+
+## 📁 Repository Structure
 
 ```text
-Codec-Technologies/
+Codec/
 │
-├── CodeAlpha_CreditScoringModel/
+├── CineMatch/
+│   └── Movie Recommendation System
+│
+├── WeatherPrediction/
+│   ├── app.py
+│   ├── src/
+│   ├── assets/
 │   ├── data/
 │   ├── models/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── README.md
-│
-├── CodeAlpha_SpeechEmotionRecognition/
-│   ├── dataset/
-│   ├── models/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── README.md
-│
-├── WeatherIQ/
-│   ├── data/
-│   ├── models/
-│   ├── app.py
 │   ├── requirements.txt
 │   └── README.md
 │
 └── README.md
 ```
 
-*The folder structure may be updated as additional projects are completed.*
+---
 
-## 🎯 Internship Objectives
-
-- Gain practical experience in Artificial Intelligence and Machine Learning.
-- Understand data preprocessing and feature engineering.
-- Implement supervised and deep learning algorithms.
-- Train, evaluate, and optimize machine learning models.
-- Develop interactive applications using Streamlit.
-- Improve Python programming and problem-solving skills.
-- Build real-world projects for professional development.
-
-## 💻 Getting Started
+## ⚙️ Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/mehul-10/Codec.git
 ```
 
-### 2. Navigate to the project directory
+### 2. Navigate to the repository
 
 ```bash
-cd Codec-Technologies
+cd Codec
 ```
 
-### 3. Create a virtual environment
+### 3. Choose a project
+
+For example, to run WeatherPrediction:
+
+```bash
+cd WeatherPrediction
+```
+
+### 4. Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-### 4. Activate the environment
+Activate it on Windows:
 
-**Windows:**
 ```bash
 venv\Scripts\activate
 ```
 
-**Linux / macOS:**
-```bash
-source venv/bin/activate
-```
-
 ### 5. Install dependencies
-
-Navigate to the individual project folder and install its requirements:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Run a Streamlit application
+### 6. Launch the application
 
 ```bash
 streamlit run app.py
 ```
 
-*Follow the individual project's README for specific setup instructions.*
+*For other projects, follow their individual README files for setup and execution instructions.*
 
-## 📊 Skills Gained
+---
 
-- Python Programming
-- Machine Learning Model Development
-- Data Cleaning and Preprocessing
-- Feature Engineering
-- Model Evaluation and Performance Metrics
-- Deep Learning Fundamentals
-- Audio and Text Data Processing
-- Data Visualization
-- Streamlit Application Development
-- Git and GitHub Project Management
+## 🎯 Learning Goals
 
-## 👨‍💻 Developer
+- Build practical Artificial Intelligence and Machine Learning applications.
+- Understand data preprocessing and feature engineering.
+- Develop and evaluate predictive models.
+- Explore recommendation systems.
+- Work with real-world datasets.
+- Build interactive applications and dashboards.
+- Improve software development and problem-solving skills.
+- Learn professional Git and GitHub workflows.
+
+---
+
+## 📈 Project Development
+
+This repository is continuously evolving. New projects, features, improvements, and documentation will be added as I progress through my AI/ML learning journey.
+
+---
+
+## 👨‍💻 About Me
 
 **Mehul Gupta**
 
 B.Tech Computer Science Engineering Student
 
-- GitHub: [@mehul-10](https://github.com/mehul-10)
-- LinkedIn: [Mehul Gupta](https://www.linkedin.com/in/mehulgupta-developer/)
+Interested in Artificial Intelligence, Machine Learning, and Full-Stack Development.
 
-## 🙏 Acknowledgement
-
-I would like to thank **Codec Technologies** for providing this internship opportunity and helping me gain practical exposure to Artificial Intelligence and Machine Learning through hands-on projects.
-
-This repository represents my learning journey, technical progress, and practical implementation of AI/ML concepts.
+<p>
+  <a href="https://github.com/mehul-10">
+    <img src="https://img.shields.io/badge/GitHub-mehul--10-black?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://www.linkedin.com/in/mehulgupta-developer/">
+    <img src="https://img.shields.io/badge/LinkedIn-Mehul%20Gupta-blue?style=for-the-badge&logo=linkedin" />
+  </a>
+</p>
 
 ---
 
-⭐ If you find this repository useful, consider giving it a star!
+## 🙏 Acknowledgement
+
+Special thanks to **Codec Technologies** for providing the opportunity to gain practical exposure to Artificial Intelligence and Machine Learning through hands-on project development.
+
+---
+
+<p align="center">
+  ⭐ If you find my projects interesting, consider giving this repository a star!
+</p>
+
+<p align="center">
+  <b>Built with 💙 by Mehul Gupta</b>
+</p>
