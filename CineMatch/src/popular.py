@@ -1,5 +1,7 @@
 
+from anyio import Path
 import pandas as pd
+from pathlib import Path
 
 try:
     from .data_preprocessing import load_data, preprocess_movies
@@ -78,7 +80,10 @@ if __name__ == "__main__":
     movies, ratings = load_data()
 
     # Load TMDB mappings
-    links = pd.read_csv("data/links.csv")
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    DATA_DIR = BASE_DIR / "data"
+    
+    links = pd.read_csv(DATA_DIR / "links.csv")
 
     movies = movies.merge(
         links[["movieId", "tmdbId"]],
