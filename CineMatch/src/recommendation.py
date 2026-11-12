@@ -2,6 +2,7 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from pathlib import Path
 
 try:
     from .data_preprocessing import load_data, preprocess_movies
@@ -15,8 +16,11 @@ def build_recommendation_engine():
     movies, ratings = load_data()
 
     # Load MovieLens-to-TMDB ID mappings
-    links = pd.read_csv("data/links.csv")
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    DATA_DIR = BASE_DIR / "data"
 
+    links = pd.read_csv(DATA_DIR / "links.csv")
+     
     # Merge TMDB IDs into movie dataset
     movies = movies.merge(
         links[["movieId", "tmdbId"]],

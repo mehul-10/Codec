@@ -1,15 +1,18 @@
 
 import pandas as pd
-import os
+from pathlib import Path
 
 # Dataset paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MOVIES_PATH = os.path.join(BASE_DIR, "data", "movies.csv")
-RATINGS_PATH = os.path.join(BASE_DIR, "data", "ratings.csv")
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data"
+
+MOVIES_PATH = DATA_DIR / "movies.csv"
+RATINGS_PATH = DATA_DIR / "ratings.csv"
 
 
 def load_data():
     """Load movie and rating datasets."""
+
     movies = pd.read_csv(MOVIES_PATH)
     ratings = pd.read_csv(RATINGS_PATH)
 
@@ -41,6 +44,7 @@ def preprocess_movies(movies):
 
 
 if __name__ == "__main__":
+
     movies, ratings = load_data()
     movies = preprocess_movies(movies)
 
