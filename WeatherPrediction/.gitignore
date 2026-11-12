@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE
+.vscode/
+
+# Dataset: keep processed data, exclude original raw CSV
+data/weatherAUS.csv
+
+# OS files
+.DS_Store
+Thumbs.db
